@@ -441,7 +441,7 @@
                         </div>
 
                     </div>
-                    <form id="form">
+                    <form>
 
                         <label>
                             <h5 class="text-base font-semibold text-[#030712] font-[Inter] my-3">Passenger Name*</h5>
@@ -479,17 +479,16 @@
 
     </main>
     <!-- modal section -->
-    <section >
-        <!-- <button class="btn" onclick="my_modal_5.showModal()">open modal</button> -->
+    <section id="modal" >
+        <button class="btn" onclick="my_modal_5.showModal()">open modal</button>
         <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
             <div class="modal-box bg-white w-[718px] mx-auto p-14 rounded-2xl text-center">
                 <img class="w-[100px] mx-auto" src="images/success.png" alt="">
                 <h4 class="uppercase text-[#27AE60] my-10 text-2xl font-bold">success</h4>
                 <p class="text-[#4A4A4A] text-xl font-medium">Thank you for Booking Our Bus Seats.
                     We are working hard to find the best service and deals for you. <br> <br>
-                    <span class=" font-light">Shortly you will find a confirmation in your email.</span>
+                    <span class="font-light">Shortly you will find a confirmation in your email.</span>
                 </p>
-                <div class="modal-action ">
                     <form method="dialog">
                         <!-- if there is a button in form, it will close the modal -->
                         <button class="btn bg-[#27AE60] text-white px-40 py-4 rounded-3xl mt-4">Continue</button>
@@ -497,9 +496,11 @@
                 </div>
             </div>
         </dialog>
-        
+
+       
     </section>
-   
+    
+    <!-- footer section -->
     <footer id="footer" class="bg-black py-20 lg:py-40 lg:px-44">
         <div class="lg:flex justify-between ">
             <div class="text-center lg:text-left">
