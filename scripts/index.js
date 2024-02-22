@@ -72,19 +72,14 @@ const inputs = document.getElementsByClassName('input');
 const nam = document.getElementById('name');
 const number = document.getElementById('number');
 const submitButton = document.getElementById('submit');
-
 for (const input of inputs) {
     input.addEventListener('keyup', function () {
-        const seatCount = getConvertedValue('seat-count');
         const submit = submitButton.disabled = false;
-
-
         
             if (nam.value === "" || number.value === "") {
                 submitButton.disabled = true;
 
             }
-
 
             if (nam.value.length < 5 || number.value.length < 11) {
                 submitButton.disabled = true;
@@ -93,8 +88,7 @@ for (const input of inputs) {
 
             else {
                 if(submit === true) {
-                    document.getElementById('modal').style.display = 'block';
-                    
+                    my_modal_5.showModal();
                   
                 
                 }

@@ -413,7 +413,7 @@
 
                         </ul>
                         <hr class="border-2 border-gray-300 border-dashed">
-                        <div class="flex lg:justify-between mt-10">
+                        <div class="flex justify-between mt-10">
                             <h5 class="text-base font-medium text-[#030712] font-[Inter]">Total</h5>
                             <h5 class="text-base font-medium text-[#030712] font-[Inter] mb-4">BDT <span
                                     id="total-cost">0</span>
@@ -463,24 +463,16 @@
                         </label>
                         <button onclick="my_modal_5.showModal()" type="submit" id="submit"
                             class="btn bg-[#1DD100] w-full h-[64px] mt-4 rounded-2xl text-white" disabled>Next</button>
-
-
                     </form>
-
-
                 </div>
             </div>
-
-
-
         </section>
 
 
 
     </main>
     <!-- modal section -->
-    <section id="modal" >
-        <button class="btn" onclick="my_modal_5.showModal()">open modal</button>
+    <section>
         <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
             <div class="modal-box bg-white w-[718px] mx-auto p-14 rounded-2xl text-center">
                 <img class="w-[100px] mx-auto" src="images/success.png" alt="">
@@ -489,17 +481,20 @@
                     We are working hard to find the best service and deals for you. <br> <br>
                     <span class="font-light">Shortly you will find a confirmation in your email.</span>
                 </p>
-                    <form method="dialog">
-                        <!-- if there is a button in form, it will close the modal -->
-                        <button class="btn bg-[#27AE60] text-white px-40 py-4 rounded-3xl mt-4">Continue</button>
-                    </form>
-                </div>
+                <form method="dialog">
+                    <!-- if there is a button in form, it will close the modal -->
+                    <button class="btn bg-[#27AE60] text-white px-40 py-4 rounded-3xl mt-4">Continue</button>
+                </form>
+            </div>
             </div>
         </dialog>
-
-       
     </section>
-    
+
+ 
+    <!-- <button class="btn" onclick="my_modal_5.showModal()">open modal</button> -->
+
+
+
     <!-- footer section -->
     <footer id="footer" class="bg-black py-20 lg:py-40 lg:px-44">
         <div class="lg:flex justify-between ">
