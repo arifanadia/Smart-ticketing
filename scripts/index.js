@@ -6,8 +6,8 @@ for (const seat of seatBtn) {
 
 
         // seat limits
-        const firstSeatDownCount = getConvertedValue('seat-downCount');
-        if (firstSeatDownCount - 1 < 0) {
+        const firstSeatCount = getConvertedValue('seat-count');
+        if (firstSeatCount + 1 > 4) {
             alert('limit are finished');
             return;
         }
@@ -77,7 +77,7 @@ const submitButton = document.getElementById('submit');
 for (const input of inputs) {
     input.addEventListener('keyup', function () {
         const seatCount = getConvertedValue('seat-count');
-        const submit = submitButton.disabled = false
+        const submit = submitButton.disabled = false;
 
 
         
@@ -94,7 +94,8 @@ for (const input of inputs) {
 
             else {
                 if(submit === true) {
-                    next()
+                    document.getElementById('my_modal_5').style.display = 'block'
+                    
                   
                 
                 }
