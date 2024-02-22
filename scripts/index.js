@@ -71,45 +71,37 @@ for (const seat of seatBtn) {
 const inputs = document.getElementsByClassName('input');
 const nam = document.getElementById('name');
 const number = document.getElementById('number');
-const totalCostId = getConvertedValue('total-cost');
-console.log(number);
 const submitButton = document.getElementById('submit');
 for (const input of inputs) {
     input.addEventListener('keyup', function () {
         const seatCount = getConvertedValue('seat-count');
         const submit = submitButton.disabled = false;
 
+        if (nam.value === "" || number.value === "") {
+            submitButton.disabled = true;
 
-        
-            if (nam.value === "" || number.value === "") {
-                submitButton.disabled = true;
+        }
 
-            }
+        if (nam.value.length < 5 || number.value.length < 11) {
+            submitButton.disabled = true;
 
+        }
 
-            if (nam.value.length < 5 || number.value.length < 11) {
-                submitButton.disabled = true;
-
-            }
-
-            else {
-                if(submit === true) {
-                    document.getElementById('my_modal_5').style.display = 'block'
-                    
-                  
+        else {
+            if (submit === true) {
+                document.getElementById('my_modal_5').style.display = 'block'
                 
-                }
+               
+
+
 
             }
+
+        }
     })
 
 }
-function next (){
-    hideElementId('header');
-    hideElementId('main');
-    hideElementId('footer');
-    showElementId('modal');
-}
+
 
 
 
